@@ -16,6 +16,8 @@
         <img src="images/ok.svg">
         <h1>Proceso de inscripción ha finalizado con éxito</h1>
         <h2>Sus datos han sido guardados correctamente</h2>
+        <br><br>
+        <div class="link"><a href="inscritos.php">Ver lista de inscritos</a></div>
     </div>
 </body>
 </html>

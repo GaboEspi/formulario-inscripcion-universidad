@@ -11,5 +11,5 @@
     , '".$_POST['residencia']."'
     , '".$_POST['estudios']."'
     , '".$_POST['carrera']."')";
-    mysqli_query($conexion, $sql) or die("ERROR en la insersion del registro: ".mysqli_errno($conexion));
+    $conexion->query($sql);
     header("location:finproceso.php");

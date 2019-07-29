@@ -13,3 +13,10 @@ img{
     display: block;
     margin: auto;    
 }
+.link{
+    margin: 0;
+    text-align: center;
+}
+a{
+    color: rgb(5, 136, 5);
+}

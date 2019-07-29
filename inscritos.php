@@ -19,17 +19,17 @@
                 <th>Apellidos</th>
                 <th>Documento</th>
                 <th>E-mail</th>
-                <th>Pais</th>
+                <th>País</th>
                 <th>Estudios</th>
-                <th>Carrera inscribir</th>
+                <th>Carrera inscribir</th>                
             </thead>
             <tbody>
                 <?php
                     require_once("conexion.php");
                     $sql = "SELECT * FROM inscritos";
                     $cont = false;
-                    if($resultados = mysqli_query($conexion, $sql)){
-                        while($registro = mysqli_fetch_array($resultados)){
+                    if($resultados = $conexion->query($sql)){
+                        while($registro = $resultados->fetch_assoc()){
                             echo ($cont)?"<tr>":"<tr class='color'>";
                             echo"<td> ".$registro['nombres']."</td>
                                 <td> ".$registro['apellidos']."</td>
@@ -45,7 +45,7 @@
                 ?>
                 
             </tbody>
-        </table>
+        </table>        
     </div>
 </body>
 </html>
